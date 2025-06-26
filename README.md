@@ -54,6 +54,33 @@ A collaborative automation framework designed for web testing using **Java**, **
 ## 🚧 Getting Started
 
 1. Clone the repo:
-   ```bash
+     ```bash
    git clone https://github.com/AkshayT010/Atlas‑Guild.git
    cd Atlas‑Guild
+     
+3. Install Dependencies
+   mvn clean install
+
+
+## 🚧 Project Structure
+Atlas‑Guild/
+├── pom.xml
+└── src/
+    ├── main/java/…
+    │   ├── pages/          # Page Objects
+    │   ├── utils/          # Drivers, Config, Data providers
+    │   └── listeners/      # Custom TestNG listeners
+    └── test/java/…
+        └── tests/          
+        
+## 🚧 How To run the classes
+🔹Run all tests
+mvn test
+🔹Run specific test suite
+   mvn test -DsuiteXmlFile=testng-smoke.xml
+🔹Run a single test class
+  mvn -Dtest=LoginTests test
+
+
+
+ 
