@@ -37,9 +37,7 @@ A collaborative automation framework designed for web testing using **Java**, **
 - Java 8+  
 - Maven for dependency management  
 - Selenium WebDriver  
-- TestNG  
 - WebDriverManager  
-- (Optional) Allure / ExtentReports
 
 ---
 
@@ -64,22 +62,23 @@ A collaborative automation framework designed for web testing using **Java**, **
 
 ## 🚧 Project Structure
 Atlas‑Guild/
-├── pom.xml
-└── src/
-    ├── main/java/…
-    │   ├── pages/          # Page Objects
-    │   ├── utils/          # Drivers, Config, Data providers
-    │   └── listeners/      # Custom TestNG listeners
-    └── test/java/…
-        └── tests/          
+
+- ├── pom.xml
+- └── src/
+-    ├── main/java/…
+ -   │   ├── utils/          # Drivers, Config, Data providers
+ -   └── test/java/…
+ -       └── tests/          
         
 ## 🚧 How To run the classes
-🔹Run all tests
-mvn test
-🔹Run specific test suite
-   mvn test -DsuiteXmlFile=testng-smoke.xml
-🔹Run a single test class
-  mvn -Dtest=LoginTests test
+1.Run all tests
+ -  mvn test
+   
+2.Run specific test suite
+ -  mvn test -DsuiteXmlFile=testng-smoke.xml
+
+3.Run a single test class
+-  mvn -Dtest=LoginTests test
 
 
 
